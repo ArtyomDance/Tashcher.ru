@@ -1,0 +1,108 @@
+body {
+    background-color: #0c0032; /* Задаем фоновый цвет всему сайту, кроме навбара */
+  }
+
+.navbar-custom {
+    background-color: #282828;
+    /* Дополнительные стили для навбара */
+  }
+  
+  .big-container {
+    text-align: center; /* Центрируем содержимое по горизонтали */
+    padding: 50px; /* Добавляем отступы внутри контейнера */
+    max-width: 960px; /* Максимальная ширина контейнера */
+    margin: 0 auto; /* Центрируем контейнер на странице */
+    position: relative; /* Добавляем позиционирование для псевдоэлементов */
+    
+  }
+
+  .big-container img {
+    max-width: 100%; /* Устанавливаем максимальную ширину изображения в размер контейнера */
+  }
+
+  .big-container h1 {
+    font-size: 32px; /* Устанавливаем размер заголовка */
+    margin-bottom: 20px; /* Добавляем отступ снизу для заголовка */
+    color: red;
+  }
+
+  .big-container h2 {
+    font-size: 32px; /* Устанавливаем размер заголовка */
+    margin-bottom: 20px; /* Добавляем отступ снизу для заголовка */
+    color: red;
+  }
+  
+  
+  .big-container p {
+    font-size: 18px; /* Устанавливаем размер текста */
+    margin-bottom: 15px; /* Добавляем отступ снизу для абзацев */
+    color: red;
+  }
+  
+  .big-container::before,
+  .big-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px; /* Ширина полосок */
+    background-color: red; /* Цвет полосок */
+  }
+  
+  .big-container::before {
+    left: 0; /* Полоска слева */
+  }
+  
+  .big-container::after {
+    right: 0; /* Полоска справа */
+  }
+
+  .navbar-custom {
+    position: relative;
+  }
+  
+  .left-image,
+  .right-image {
+    position: absolute;
+    top: 60px; /* высота навбара + отступ */
+    width: calc((100% - 960px) / 2); /* ширина равна половине ширины оставшейся области на странице */
+    height: 100%; /* Занимаем всю высоту экрана */
+    overflow: hidden; /* Скрываем содержимое, выходящее за пределы дива */
+  }
+  
+  .left-image img,
+  .right-image img {
+    width: 100%;
+  }
+  
+  .main-content {
+    margin: 0 auto; /* Центрируем основное содержимое */
+    max-width: 960px; /* Максимальная ширина основного содержимого */
+  }
+  
+  .right-image {
+    right: 0; /* Прикрепляем к правому краю страницы */
+  }
+  
+  .all-tashers {
+    display: flex;
+    flex-direction: column; /* Это изменение заставит элементы располагаться вертикально */
+    align-items: center;
+}
+
+.all-tashers img {
+    width: 150px;
+    margin-bottom: 20px; /* Добавляем отступ между изображениями */
+}
+
+.all-tashers p {
+    flex-grow: 1;
+}
+
+.navbar-brand {
+    color:red;
+}
+
+.container-fluid a {
+    color:red;
+}
